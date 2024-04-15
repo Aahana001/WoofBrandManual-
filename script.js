@@ -57,7 +57,7 @@ function handleEnd(e) {
 }
 
 function updateCard() {
-  card.innerHTML = `<img src="${images[currentIndex]}" alt="Image ${
+  card.innerHTML = `<img src="/images/${images[currentIndex]}" alt="Image ${
     currentIndex + 1
   }">`;
 }
