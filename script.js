@@ -39,10 +39,12 @@ function handleMove(e) {
     if (Math.abs(diff) > threshold) {
       if (diff > 0) {
         // Swiped left
-        currentIndex = (currentIndex + 1) % images.length;
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+
       } else {
         // Swiped right
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        currentIndex = (currentIndex + 1) % images.length;
+
       }
       updateCard();
       startX = null;
